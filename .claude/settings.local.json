@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx shadcn@latest init --preset nova --base-color neutral --yes)",
+      "Read(//private/tmp/**)",
+      "Bash(node harness-zoom.mjs)",
+      "Bash(curl -s http://127.0.0.1:5173/src/styles.css)",
+      "Bash(grep -o \"\\\\.bg-primary[^,]*{[^}]*}\")",
+      "Bash(lsof -ti:5173)",
+      "Bash(xargs -r kill)",
+      "Bash(npx vite *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5173/)",
+      "Bash(curl -s http://127.0.0.1:5173/ -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(node harness-snap.mjs)",
+      "Bash(node harness-zoom2.mjs)",
+      "Bash(curl -s \"http://127.0.0.1:5173/src/components/UserWorkbench.tsx?t=$\\(date +%s\\)\")",
+      "Bash(node harness-debug2.mjs)",
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5173/src/components/UserWorkbench.tsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5173/src/state/store.ts)",
+      "Bash(node harness-update-shot.mjs)",
+      "Bash(curl -s http://127.0.0.1:5173/src/state/store.ts)",
+      "Bash(npx shadcn@latest add textarea --yes --silent)"
+    ]
+  }
+}
